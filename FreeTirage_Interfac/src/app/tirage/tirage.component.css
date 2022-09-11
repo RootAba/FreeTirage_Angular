@@ -1,0 +1,78 @@
+.sp{
+  background-color:#209F85 ;
+  border-radius: 10px;
+  height: 45px;
+  margin: 50px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding: 1px;
+  color: white;
+}
+
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+ 
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+ 
+input:focus {
+  background: #eaeaea;
+}
+ 
+input, textarea {
+  width: 249px;
+}
+ 
+
+form  .champ{
+  padding-top: 10px;
+  display: block;
+  margin-right: 50px;
+  padding-bottom: 10px;
+}
+form .champ input{
+  margin-left: 50PX;
+  width: 400px;
+  height: 42px;
+  border-width: 0;
+  font-size: 18px;
+  background: #0000001f;
+}
+form  .champ  label{
+  font-size: 20px;
+  width: 150px;
+}
+
+  .container{
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+  }
+  .container .submit{
+    padding-bottom: 100px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: end;
+  }
+  .lastLine{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    color: blue;
+  }
+.submit > button{
+  height: 33px;
+  background: white;
+  border-width: 3px;
+}
+ 
+ 
+  

@@ -1,0 +1,52 @@
+<main>
+  <div class="content">
+      
+          <div class="sp">
+      <p>Détail Tirage </p>
+          </div>
+          <div class="b"><p>Date: 25/03/2022</p>
+          </div>
+          
+      </div>
+      
+          <div>
+            
+              <table style="width:100%">
+              <thead>
+                  <tr>
+                    <th style="width:23%">Nom</th>
+                    <th style="width:23%">Prénom</th>
+                    <th style="width:23%">Numéro</th>
+                    <th style="width:31%">Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let postulants of postulant">
+                    <td>{{postulants[2]}}</td>
+                    <td>{{postulants[4]}}</td>
+                    <td>{{postulants[3]}}</td>
+                    <td>{{postulants[1]}}</td>
+                  </tr>
+                  <!-- <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> -->
+                  </tbody>
+                </table>
+              
+          </div>
+</main>
