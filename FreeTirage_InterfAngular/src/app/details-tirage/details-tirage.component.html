@@ -1,0 +1,52 @@
+<main>
+  <div class="content">
+      
+          <div class="sp">
+      <p>Détail Tirage </p>
+          </div>
+          <div class="b"><p>Date: 25/03/2022</p>
+          </div>
+          
+      </div>
+      
+          <div>
+            
+              <table style="width:100%">
+              <thead>
+                  <tr>
+                    <th style="width:23%">Nom</th>
+                    <th style="width:23%">Prénom</th>
+                    <th style="width:23%">Numéro</th>
+                    <th style="width:31%">Email</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let postulanttire of postulanttirer  | paginate:{itemsPerPage :5, currentPage:p}; let id = index">
+                    <td>{{postulanttire[3]}}</td>
+                    <td>{{postulanttire[5]}}</td>
+                    <td>{{postulanttire[4]}}</td>
+                    <td>{{postulanttire[1]}}</td>
+                  </tr>
+                  <!-- <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr> -->
+                  </tbody>
+                </table>
+                <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+          </div>
+</main>

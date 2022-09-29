@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #209F85;
+  border-radius: 5px;
+  
+}
+input[type="search"]{
+    font-size: 20px;
+   border-radius: 10px 10px 10px 10px;
+    background-size: 15px;
+    background-position: 210px;
+    background-repeat: no-repeat;
+    background-position-y: 5px;
+    background-color: #f2f2f2;
+    width: 400px;
+    height: 28px;
+    padding: 20;
+    border: none;
+
+    margin-right: 40px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+   display: flex;
+    justify-content:space-between ;
+    align-items: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #85f0da;
+  color: #209F85;
+}
+
+
+
+form{
+    padding: 20px;
+    text-align: right;
+}
+ul a {
+  font-family: irish Grover;
+    text-align: right;
+    color: white;
+    letter-spacing: 0.1rem;
+}
+
+
+
+
+footer{
+    display: block;
+    height: 40px;
+    margin: 50;
+  
+}
+.main_footer{
+    letter-spacing: 0.1rem;
+    text-align:left;
+    background-color:#209F85;
+    color: white;
+}
+/* Style the footer */
+.footer {
+    background-color: #209F85;
+    color: white;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+  }
+
+  .router{
+    margin-bottom: 50px;
+  }

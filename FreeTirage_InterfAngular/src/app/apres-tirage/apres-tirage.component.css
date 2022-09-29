@@ -1,0 +1,34 @@
+th, td{
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  
+}
+
+ul a {
+  text-align: right;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+table{
+  border-collapse: collapse;
+ 
+}
+
+th, td{
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+  
+}
+
+.sp{
+  background-color:#209F85 ;
+  border-radius: 10px;
+  height: 45px;
+  margin: 50px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding: 1px;
+  color: white;
+}

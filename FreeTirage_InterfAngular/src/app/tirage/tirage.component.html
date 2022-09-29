@@ -1,0 +1,100 @@
+
+
+<div class="container">
+    <form>
+      <div class="champ">
+        <label for="nom">Nombre :</label>
+        <input type="number" [(ngModel)]="nombre" name="nombre" >
+      </div>
+        <div class="champ" >
+          <label for="select">Selection liste :</label>
+          <!-- <input type="text" id="select" name="select" required> -->
+           <select  form="carform" [(ngModel)]="libelleListe" name="libelleliste" >
+            <option *ngFor="let postulants of postulant" value={{postulants[2]}} 
+              name="libelleListe">{{postulants[2]}}</option>
+          </select> 
+
+<a class="btn btn-outline-success" id="bt" data-bs-toggle="modal"
+            data-bs-target="#AddEtudiant">Importer le fichier</a>
+           <!-- <input type="text" id="tirage" name="libelleListe" [(ngModel)]="libelleListe" required>  -->
+        </div>
+      <div class="champ" >
+        <label for="tirage">Libellé Tirage :</label>
+        <input type="text" [(ngModel)]="libelletirage" name="libelletirage" required>
+      </div>
+     
+     
+        <!-- <a routerLink="/importer" routerLinkActive="active">Importer un fichier</a> -->
+      
+        
+        <div class="submit">
+          <a class="btn btn-outline-success" id="bt" data-bs-toggle="modal"
+          data-bs-target="#tirer">
+          <button type="submit" (click)="PostTirage()">Tirer</button></a>
+        </div>
+     
+
+        <!-- <div class="submit">
+        
+          <button type="submit" (click)="PostulantTirer()">Tirer</button>
+        </div> -->
+      
+    </form>
+    <div>
+      {{postRecup}}
+    </div>
+  </div>
+
+  <div class="modal fade" id="AddEtudiant">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="card border-0 shadow p-3">
+                    <form [formGroup]="formmodule">
+                        <div class="row mb-3">
+                            <div class="col-4"> <label for="Listelibelle" class="form-label">LIBELLE LISTE</label>
+                            </div>
+                            <div class="col-8">
+                                <input required type="text" id="Listelibelle" class="form-control" name="libelle" formControlName="libelle">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-8">
+                                <input type="file" class="text-nowrap text-truncate file" formControlName="file" (change)="fileChange($event)">
+                            </div>
+
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button (click)="importerliste()" type="button" class="btn btn-outline-warning" data-bs-dismiss="modal"><i
+                                    class="bi bi-upload"></i> 
+                                Upload</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="tirer">
+  <div class="modal-dialog">
+      <div class="modal-content">
+
+          <div class="modal-body">
+              <div class="card border-0 shadow p-3">
+                 
+                      <div class="row mb-3">
+                          <div class="col-4"> <label for="Listelibelle" class="form-label">Tirage effectuée avec succès</label>
+                          </div>
+                         
+              </div>
+
+          </div>
+      </div>
+  </div>
+</div>

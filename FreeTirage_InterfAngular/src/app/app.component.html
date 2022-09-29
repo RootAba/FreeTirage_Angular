@@ -1,0 +1,28 @@
+<body>
+  <header>
+    <div class="topnav">
+        <a href="#">
+            <h1 class="logo_titre">FreeTirage</h1>
+        </a>
+        <ul class="menu">
+          <a routerLink="/acceuil" routerLinkActive="active">Acceuil</a>
+          <a routerLink="/tirage" routerLinkActive="active">Tirage</a>
+        
+        </ul>
+      <form >
+        <input type="search" name="R" placeholder="Recherche" size="30" >
+      
+      </form>
+    </div>
+  </header>
+  <div class="router">
+    <router-outlet></router-outlet>
+
+  </div>
+
+  <footer style="width:100%" class="footer">
+    <div class="main_footer center_text">
+        <p>2022: @FreeTirage</p>
+    </div>
+  </footer>
+</body>
